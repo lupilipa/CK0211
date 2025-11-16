@@ -1,14 +1,5 @@
 #l ()
 
-algoritmo
-    declare  numerico
-    escreva 
-    leia 
-    se 
-    entao
-    senao
-fim_algoritmo
-
 #estrutura sequencial
 #tipos: numerico, literal e logico
 
@@ -17,6 +8,8 @@ algoritmo
     bloco_comandos
 fim_algoritmo
 
+
+
 #declaração de variável
 algoritmo
     declare x numerico
@@ -24,6 +17,8 @@ algoritmo
             teste logico
     bloco_comandos
 fim_algoritmo
+
+
 
 #comando de atribuição
 algoritmo
@@ -36,6 +31,8 @@ algoritmo
     teste <- falso
 fim_algoritmo
 
+
+
 #comando de entrada
 algoritmo
     declare x numerico
@@ -44,6 +41,8 @@ algoritmo
     leia x
     leia y
 fim_algoritmo
+
+
 
 #comando de saída
 algoritmo

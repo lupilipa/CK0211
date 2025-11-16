@@ -1,0 +1,114 @@
+#l ()
+
+#comando while
+while condição :
+    comando1
+    comando2
+
+
+
+#repetição com teste no início
+n = int(input('digite um número positivo: '))
+while n <= 0:
+    print('número não aceito. tente novamente.')
+    n = int(input('digite um número positivo: '))
+print('você digitou o número ', n)
+
+
+
+#contadores com while
+cont = 0
+while cont < 10:
+    cont += 1
+    print('valor do contador ', cont)
+print('fim')
+saída:
+
+
+
+#terminação do loop precocemente
+while condição1:
+    comando1
+    if condição2:
+        break
+    comando2
+    comando3
+outro comandos
+
+
+
+#repetição com teste no final
+while True:
+    comandos ...
+    if condição :
+        break
+
+while True:
+    idade = int(input('quantos anos você tem?'))
+    if idade > 0
+        break
+    print('idade não existente. tente novamente.')
+print('você tem ', idade, ' anos.')
+
+
+
+#comando for
+for i in lista_de_valores
+    comando1
+    comando2
+
+
+
+#listas em python
+#tipo list
+numeros = [1, 2, 3, 4, 5]
+numeros2 = [5, 4, 3, 2, 1, 0]
+numeros3 = [1, 3, 5, 7, 9]
+
+#exemplos
+- para i <- 1 até 10 faça escreva i
+for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+    print(i)
+saída: 1 2 3 4 5 6 7 8 9 10
+
+- para i <- 10 até 5 faça passo -1 escreva i
+for i in [10, 9, 8, 7, 6, 5]:
+    print(i)
+saída: 10 9 8 7 6 5
+
+- para j <- 15 até 1 faça passo -2 escreva j
+for i in [15, 13, 11, 9, 7, 5, 3, 1]:
+    print(i)
+saída: 15 13 11 9 7 5 3 1
+
+
+
+#criando listas de inteiros
+range(inicio=0, fim, passo=1)
+
+#exemplos
+range(4)
+saída: [0, 1, 2, 3]
+range(1,5)
+saída: [1, 2, 3, 4]
+range(1, 10, 2)
+saída: [1, 3, 5, 7, 9]
+range(10, 1, -2)
+saída: [10, 8, 6, 4, 2]
+
+
+#comando for com a função range
+- para i <- 1 até 10 faça escreva i
+for i in range(1, 11):
+    print(i)
+saída: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+- para i <- 10 até 5 faça passo -1 escreva i
+for i in range(10, 4, -1):
+    print(i)
+saída: [10, 9, 8, 7, 6, 5]
+
+- para j <- 15 até 1 faça passo -2 escreva j
+for i in range(15, 0, -2):
+    print(i)
+saída: [15, 13, 11, 9, 7, 5, 3, 1]

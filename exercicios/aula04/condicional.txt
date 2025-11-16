@@ -11,6 +11,8 @@ if condição :
     comando3
 comando4 # esse vai ser executado sempre, não está no bloco if
 
+
+
 #condicional composta
 
 if condição :

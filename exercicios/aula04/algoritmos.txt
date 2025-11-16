@@ -1,14 +1,5 @@
 #l ()
 
-algoritmo
-    declare  numerico
-    escreva 
-    leia 
-    se 
-    entao
-    senao
-fim_algoritmo
-
 #condicional simples
 
 se condição
@@ -21,6 +12,8 @@ então início
     comando3
     comando4
     fim
+
+
 
 #condicional composta
 
@@ -37,6 +30,8 @@ senão início
     comando3
     comando4
     fim
+
+
 
 #exemplo
 

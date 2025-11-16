@@ -24,12 +24,16 @@ x >= y # x é maior ou igual a y
 x < y # x é menor que y
 x > y # x é maior que y
 
+
+
 #funções em python
 abs(x) #obtém o valor absoluto de x
 int(x) #converte x para inteiro
 float(x) #converte x para real
 divmod(x, y) #o par "x//y, x%y"
 pow(x, y) #o mesmo que x**y
+
+
 
 #funções matemáticas em python
 math.sqrt(x) #calcula raiz quadrada de x

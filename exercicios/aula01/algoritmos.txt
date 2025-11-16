@@ -1,5 +1,5 @@
 #l ()
-#algoritmo 1
+
 #multiplicação e divisão
 
 algoritmo
@@ -23,6 +23,8 @@ algoritmo
         escreva('divisão = ', d)
 fim algoritmo
 
+
+
 #média aritmética
 
 algoritmo
@@ -39,6 +41,8 @@ algoritmo
         escreva('aprovado')
 fim algoritmo
 
+
+
 #número par
 
 algoritmo
@@ -51,6 +55,8 @@ algoritmo
         escreva('não é par')
 fim algoritmo
 
+
+
 #convertendo temperatura
 
 algoritmo
@@ -60,6 +66,8 @@ algoritmo
     tempF = (tempC * 1.8) + 32
     escreva('a temperatura dada, em Fahrenheit é:', tempF)
 fim algoritmo
+
+
 
 #processamento de repetição
 
@@ -74,6 +82,8 @@ algoritmo
     nro = nro + 1
     escreva(soma)
 fim algoritmo
+
+
 
 #média dos números positivos digitados
 

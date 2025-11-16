@@ -1,0 +1,159 @@
+#l ()
+
+#número definido de repetições:
+repetição: laço ou loop, cada execução é uma iteração
+
+PARA
+
+para i <- valor_inicial até valor_final faça [passo n]
+início
+    comando1
+    comando2
+    ...
+    comandom
+fim
+
+- passo é opcional
+
+#exemplos
+para i <- 1 até 10 faça
+    escreva i
+saída: 1 2 3 4 5 6 7 8 9 10
+
+para j <- 1 até 9 faça passo 2
+    escreva j   #j está sendo incrementado em 2
+saída: 1 3 5 7 9
+
+para i <-10 até 5 faça passo -1
+    escreva i   #i está sendo decrementado em -1
+saída: 10 9 8 7 6 5
+
+para j <- 15 até 1 faça passo -2
+    escreva j
+saída: 15 13 11 9 7 5 3 1
+
+
+
+#acumuladores
+- para soma, começa com zero
+- para produto, começa com um
+soma <- 0
+para i <- 1 até 5 faça
+início
+    escreva "digite um número: "
+    leia num
+    soma <- soma + num
+fim
+escreva "soma = ", soma
+saída: num1 + num2 + num3 + num4 + num5
+
+
+
+#contadores
+cont <- 0
+para i <- 1 até 5 faça
+início
+    escreva "digite um número: "
+    leia num
+    se num > 5
+    então cont <- cont + 1
+fim
+escreva "quantidade de números maiores que 5 = ", cont
+saída: 6, 5, 4, 7, 8; cont = 3
+
+#com PARA, quais são pares?
+
+algoritmo
+    declare num, cont numerico
+    cont <- 0
+    para i <- 1 até 5 faça
+        início
+            escreva "digite um número: "
+            leia num
+            se num%2 == 0
+            então cont <- cont + 1
+        fim
+    escreva "você digitou: ", cont, "números pares"
+fim_algoritmo
+
+#com PARA, n int e > 0, fatorial de n
+
+algoritmo
+    declare num, fatorial numerico
+    escreva "digite um número maior que zero: "
+    leia num
+    se num <= 0 então
+        escreva "inválido! digite um número maior que zero: "
+        leia num
+    fatorial <- 1
+    para i <- num até 1 faça
+        início
+            fatorial <- fatorial * num
+            num <- num - 1
+        fim
+    escreva "o fatorial de ", num, " é ", fatorial
+fim_algoritmo
+
+
+
+#número indefinido de repetições e teste no início:
+ENQUANTO
+
+enquanto condição faça
+    comando1
+
+enquanto condição faça
+início
+    comando1
+    comando2
+    comando3
+fim
+
+#exemplos
+x <- 1
+y <- 5
+enquanto x < y faça
+início
+    x <- x + 2
+    y <- y + 1
+    escreva x, y
+fim
+saída: 3, 6 - 5, 7 - 7, 8 - 9, 9
+
+x <- 1
+y <- 1
+enquanto x <= 5 faça
+início
+    y <- y * x
+    x <- x + 1
+    escreva x, y
+fim
+saída: 2, 1 - 3, 2 - 4, 6 - 5, 24 - 6, 120
+
+
+
+#número indefinido de repetições e teste no final:
+REPITA
+
+repita
+    comandos
+até condição
+
+#exemplos
+x <- 1
+y <- 5
+repita
+    x <- x + 2
+    y <- y + 1
+    escreva x, y
+até x >= y
+saída: 3, 6 - 5, 7 - 7, 8 - 9, 9
+
+x <- 1
+y <- 1
+repita
+    y <- y * x
+    x <- x + 1
+    escreva x, y
+até x = 6
+saída: 2, 1 - 3, 2 - 4, 6 - 5, 24 - 6, 120
