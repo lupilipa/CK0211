@@ -1,0 +1,56 @@
+#l ()
+
+algoritmo
+    declare  numerico
+    escreva 
+    leia 
+    se 
+    entao
+    senao
+fim_algoritmo
+
+#estrutura sequencial
+#tipos: numerico, literal e logico
+
+algoritmo
+    declare nome_variavel tipo_variavel
+    bloco_comandos
+fim_algoritmo
+
+#declaração de variável
+algoritmo
+    declare x numerico
+            y, z literal
+            teste logico
+    bloco_comandos
+fim_algoritmo
+
+#comando de atribuição
+algoritmo
+    declare x numerico
+            y, z literal
+            teste logico
+    x <- 4
+    x <- x + 2
+    y <- "aula"
+    teste <- falso
+fim_algoritmo
+
+#comando de entrada
+algoritmo
+    declare x numerico
+            y, z literal
+            teste logico
+    leia x
+    leia y
+fim_algoritmo
+
+#comando de saída
+algoritmo
+    declare x numerico
+            y, z literal
+            teste logico
+    leia x
+    escreva x
+    escreva "o dobro de x é:", 2*x
+fim_algoritmo

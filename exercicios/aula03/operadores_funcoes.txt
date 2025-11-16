@@ -1,0 +1,38 @@
+#l ()
+
+#operadores em python
+#cont = conteudo
+
+x = y #cont de y é atribuído à x
+x + y #soma cont de x e de y
+x - y #subtrai y de x
+x * y #multiplica x por y
+x / y #divide x por y
+x % y #obtém o resto da divisão de x por y
+x // y #obtém o quociente inteiro da divisão de x por y, inteiros
+x ** y #eleva cont de x à potência do cont de y
+x += y # x=x+y
+x -= y # x=x-y
+x *= y # x=x*y
+x /= y # x=x/y
+x %= y # x=x%y
+x //= y # x=x//y
+x == y # x é igual a y
+x != y # x é diferente de y
+x <= y # x é menor ou igual a y
+x >= y # x é maior ou igual a y
+x < y # x é menor que y
+x > y # x é maior que y
+
+#funções em python
+abs(x) #obtém o valor absoluto de x
+int(x) #converte x para inteiro
+float(x) #converte x para real
+divmod(x, y) #o par "x//y, x%y"
+pow(x, y) #o mesmo que x**y
+
+#funções matemáticas em python
+math.sqrt(x) #calcula raiz quadrada de x
+math.floor(x) #arredonda um número real para baixo
+math.ceil(x) #arredonda um número real para cima
+round(x,2) #arredonda x para conter n digitos, default é 0
