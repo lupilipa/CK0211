@@ -1,0 +1,73 @@
+#l ()
+
+#expressões aritméticas e lógicas
+
+aritméticas: operadores aritméticos e operandos são variáveis numéricas ou outras expressões
+lógicas: operadores lógicos ou relacionais e operandos são relações ou variáveis do tipo lógico
+
+#operadores aritméticos
+= + - * / % // **
+
+#prioridades
+1. parênteses mais internos
+2. **
+3. * / // %
+4. + -
+-- em caso de empate, vem da esquerda para a direita
+
+#expressões
+5+9+7+8/4 = 23
+1-4*3/6-3**2 = -10
+
+#exercícios
+supondo A, B e C tipo int com valores 5, 10 e -8; D tipo float com valor 1.5:
+2*A%3-C = 9
+((20 // 3) // 3)+8**2/2 = 34
+(30 % 4 * 3 ** 3)*-1 = -54
+-C**2+(D*10)/A = -61
+
+#operadores relacionais
+valores do mesmo tipo primitivo
+== > < >= <= !=
+A=3 B=5 C=8
+A+B == C é True
+A=4
+A+B == C é False
+
+#exemplos
+3*6==36/2? True
+15%4<19%6? False
+3*5//4 <= 3**2/0.5? True
+
+#operadores lógicos e prioridades
+1. not - not X
+2. and - X>Y and X<Z
+3. or - X>Y or X>Z
+
+#tabelas-verdade
+A   not A       A  B  A and B  A or B
+F     V         F  F     F       F
+V     F         F  V     F       V
+                V  F     F       V
+                V  V     V       V
+
+#prioridades de todos
+1. parênteses mais internos
+2. operadores aritméticos
+3. operadores relacionais
+4. operadores lógicos
+
+#exemplos
+2 < 5 and 15/3 == 5 = True
+False or 20 //(18/3) != (21/3) // 2 = False
+not True or 3**2/3 < 15 - 35 % 7 = True
+not (5 != 10/2) or True and 2 - 5 > 5 - 2 or True = True
+2**4 != 4 + 2 or 2 + 3 * 5/3 % 5 < 0 = True
+
+#exercícios
+A=2, B=7, C=3.5 e L=False:
+B == A * C and (L or True) = True
+B > A or B == A**A = True
+L and B % A >= C or not A <= C = False
+B /A == C or B/A != C = True
+L or B**A <= C * 10 + A * B = True

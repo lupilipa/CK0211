@@ -1,0 +1,52 @@
+#l ()
+
+algoritmo
+    declare  numerico
+    escreva 
+    leia 
+    se 
+    entao
+    senao
+fim_algoritmo
+
+#condicional simples
+
+se condição
+então comando
+
+se condição
+então início
+    comando1
+    comando2
+    comando3
+    comando4
+    fim
+
+#condicional composta
+
+se condição
+então comando1
+senão comando2
+
+se condição
+então início
+    comando1
+    comando2
+    fim
+senão início
+    comando3
+    comando4
+    fim
+
+#exemplo
+
+algoritmo
+    declare  n1, n2, media numerico
+    leia n1
+    leia n2
+    media <- (n1+n2)/2
+    escreva "a média é ", media
+    se media >= 7
+    então escreva "aprovado"
+    senão escreva "reprovado"
+fim_algoritmo

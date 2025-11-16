@@ -1,0 +1,30 @@
+#l ()
+
+#condicional simples
+
+if condição :
+    comando1
+
+if condição :
+    comando1
+    comando2
+    comando3
+comando4 # esse vai ser executado sempre, não está no bloco if
+
+#condicional composta
+
+if condição :
+    comando1
+    comando2
+else:
+    comando3
+    comando4
+
+if condição1 :
+    comando1
+    comando2
+elif condição2 :
+    comando3
+    comando4
+else:
+    comando5
