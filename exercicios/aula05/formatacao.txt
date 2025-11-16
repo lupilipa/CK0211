@@ -1,0 +1,25 @@
+#l ()
+
+#formatando números em string
+para mostrar em uma formatação específica, usa %
+
+%d #inteiros
+%f #números reais
+%.<numero_digitos>f #números com <numero_digitos> casas decimais
+%e #números reais em notação científica
+%s #formatação padrão como texto
+
+#exemplo:
+mostrar um número real com apenas uma casa decimal
+
+r = 6/5
+print('%.1f' % r)
+
+vai aparecer: 1.2
+
+mais de uma máscara pode aparecer na string; as expressões são usadas na ordem em que elas aparecem, uma para cada combinação
+
+r = 6/5
+print('inteiro = %d e r = %.1f' % (3, r))
+
+vai aparecer: inteiro = 3 e r = 1.2
