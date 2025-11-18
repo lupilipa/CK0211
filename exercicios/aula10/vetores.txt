@@ -1,0 +1,51 @@
+#l ()
+
+#vetores em python
+vetores = array
+em python: list/lista
+
+#listas em python
+tamanho variável; heterogêneas e iniciam em 0
+
+
+
+#criando listas
+x = [10, 3, 28, 16, 8]
+x     0  1   2  3   4
+
+x[0] #pra acessar o elemento; = 10
+
+#acessando elementos da lista
+x[-1] #8
+x[-2] #16
+
+
+
+#simulando criação de vetor
+x = [0] * 50 # 50 posições com 0 -> x = [0,0,0,0,...0]
+y = [0] * 50 # 100 posições com 0
+
+
+
+#preenchendo uma lista
+x = [0] * 5
+for i in range(0,5):
+    x[i] = int(input("digite o %d número: " % (i+1)))
+
+
+
+#mostrando elementos de uma lista
+for i in range(0,5):
+    print("este é o ", i+1, "°número do vetor:", x[i])
+
+for e in x:
+    print(e)
+
+
+
+#calculando tamanho da lista
+x = [0] * 5
+len(x) #5
+
+for i in range(0, len(x)):
+    print("este é o ", i+1, "°número do vetor:", x[i])

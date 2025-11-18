@@ -1,0 +1,36 @@
+#l ()
+
+#vetor em algoritmo
+- variável composta homogênea unidimensional
+- conj. de variáveis com mesmo nome, do mesmo tipo, acessadas por um único índice
+
+declare nome[tamanho] tipo
+
+declare x[5] numérico
+- x[1] x[2] x[3] x[4] x[5]
+
+
+
+#atribuindo valores
+x[1] <- 45
+
+
+
+#preenchendo vetor
+para i <- 1 até 5 Faça
+início
+    escreva "digite o ", i, "° número"
+    leia x[i]
+fim
+
+memória:
+x  1  2   3   4  5
+  10  3  28  16  8
+
+
+
+#mostrando elementos do vetor
+para i <- 1 até 5 Faça
+início
+    escreva "este é o ", i, "° número do vetor:", x[i]
+fim

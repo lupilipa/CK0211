@@ -1,6 +1,6 @@
 #l ()
 
-#usando for; mostrar tabuada d um número maior que zero e inteiro, <=10
+#usando for; mostrar tabuada de um número maior que zero e inteiro, <=10
 
 num = int(input('digite um número inteiro maior que zero e menor ou igual a 10: '))
 
