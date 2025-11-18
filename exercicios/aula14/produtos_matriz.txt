@@ -1,0 +1,46 @@
+#l ()
+
+#produto de matrizes
+C mxp = A mxn * B nxp
+
+m é o número de linhas da matriz C e da matriz A 
+n é o número de colunas de A e o número de linhas de B 
+p é o número de colunas da matriz C e da matriz B
+
+i para percorrer as linhas de C e de A 
+j para percorrer as colunas de A e as linhas de B 
+k para percorrer as colunas de C e de B
+
+
+
+algoritmo 
+    declare A[100,100], B[100,100], C[100,100], m, n, p numérico 
+            mB, s, i, j, k numérico 
+    escreva “Digite o número de linhas de A (máx. 100)” 
+    leia m 
+    escreva “Digite o número de colunas de A (máx. 100)” 
+    leia n 
+    escreva “Digite o número de linhas de B (máx. 100)” 
+    leia mB 
+    se mb ≠ n então 
+    início 
+        escreva “Número de linhas de B ≠ número de colunas de A” 
+    fim 
+    senão 
+    início 
+        escreva “Digite o número de colunas de B (máx. 100)” 
+        leia p 
+    fim
+    para i ← 1 ATÉ m FAÇA 
+    início 
+        para k ← 1 ATÉ p FAÇA 
+        início 
+            s ← 0 
+            para j ← 1 ATÉ n FAÇA 
+            início 
+                s ← s + A[i,j] * B[j,k] 
+            fim 
+            C[i,k] ← s 
+        fim 
+    fim
+fim_algoritmo 

@@ -1,0 +1,3 @@
+#l ()
+
+# A coordenação da Ciência da Computação deseja saber se existem alunos cursando, simultaneamente, as disciplinas de Fundamentos de Programação (FUP) e Cálculo II. Coloque os números das matrículas dos alunos que cursam FUP em um vetor, 20 alunos. Coloque os números das matrículas dos alunos que cursam Cálculo II em outro vetor, 40 alunos. Mostre o número das matrículas que aparecem nos dois vetores

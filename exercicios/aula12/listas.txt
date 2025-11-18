@@ -1,0 +1,58 @@
+#l ()
+
+#listas
+[1, 7, -2]
+- atribuindo a lista a uma variável:
+a = [2, 4, 9]
+- dados mutáveis
+a[1] = -3
+a = [2, -3, 9]
+
+
+
+#modificações em listas
+b = a 
+b[0] #2
+b[2] = 1
+b = [2, -3, 1]
+a = [2, -3, 1]
+- em python é possível mudar o tamanhoh da lista
+a.append(9)
+b = [2, -3, 1, 9]
+
+- outros
+list.insert(i,x) #inserir elemento x na posição i
+a.insert(1,5)
+list.remove(x) #remover o primeiro elemento x que achar
+a.remove(5)
+list.pop() #remove o último elemento e o retorna
+x = a.pop()
+list.pop(i) #remove o elemento da posição i e o retorna
+x = a.pop(0)
+
+
+
+#fatiamento de listas
+g = [5,4,3,2,1]
+
+g[0:2]
+[5,4]
+g[:2]
+[5,4]
+g[1:]
+[4,3,2,1]
+g[0:5]
+[5,4,3,2,1]
+g[:]
+[5,4,3,2,1]
+g[-2:]
+[2,1]
+
+
+
+#copiando listas
+c = list(a)
+ou
+c = a[:]
+- copiar e adicionar mais um:
+a + [1]

@@ -1,0 +1,61 @@
+#l ()
+
+#registros em python
+- registros através de dicionários
+- já com todos os campos e valores:
+
+nome_registro = { ‘nome_campo1’ : conteudo_campo1, 
+                  ‘nome_campo2’ : conteudo_campo2,  
+                   …, 
+                  ‘nome_campoN' : conteudo_campoN }
+
+- dicionário vazio e insere os campos e valores depois:
+
+nome_registro = {} 
+nome_registro[‘nome_campo1’] = conteudo_campo1 
+nome_registro[‘nome_campo2’] = conteudo_campo2  
+… 
+nome_registro[‘nome_campoN’] = conteudo_campoN
+
+#exemplo
+
+conta = {'num' : 123456, 
+        'saldo' : 1000.00, 
+        'nome' : ‘João Silva'}
+
+conta = {} 
+conta[’num’] = int(input(“Digite o número da conta: ”)) 
+conta[’nome’] = input(“Digite o nome do titular da conta: ”) 
+conta[’saldo’] = float(input(“Digite o saldo da conta: ”))
+
+
+
+#acesso aos campos
+nome_registro[‘nome_campo’]
+
+#exemplo
+
+conta = {} 
+conta[’numero’] = int(input(“Digite o número da conta: ”)) 
+conta[’titular’] = input(“Digite o nome do titular da conta: ”) 
+conta[’saldo’] = float(input(“Digite o saldo da conta: ”))
+
+
+
+#preenchendo lista de dicionários
+
+funcionarios = [] # lista vazia 
+for i in range(4): # quatro funcionarios 
+    funcionario = {} # registro funcionario 
+    funcionario[‘nome’] = input(“Digite o nome do funcionário %d: ”%i) 
+    funcionario[‘salario’] = float(input(“Digite o salário do \ 
+funcionário %d: ” % i)) 
+    funcionarios.append(funcionario) # adiciona o dicionário à lista
+
+
+
+#mostrando dicionários em lista
+ for i in range(4): 
+    print(“Funcionário que ocupa a posição %d no vetor:” % i) 
+    print(“Nome: %s” % funcionarios[i][‘nome’]) 
+    print(“Salário: R$ %.2f” % funcionarios[i][‘salario’])

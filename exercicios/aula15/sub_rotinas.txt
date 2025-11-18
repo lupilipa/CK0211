@@ -1,0 +1,51 @@
+#l ()
+
+#funções em python
+def nome(parametro1, parametro2, ..., parametroN):
+    comando1
+    ...
+    comandoN
+    return valor #opcional
+
+#exemplos
+
+def calculo(sal): 
+    perc = float(input("Entre com o percentual de aumento: ")) 
+    valor = sal * perc / 100 
+    return valor 
+sal = float(input(“Entre com o salário: “)) 
+aum = calculo(sal) 
+novo_sal = sal + aum 
+print(“Novo salario é: R$%.2f” % novo_sal)
+
+def eh_par(num): 
+    resultado = False 
+    if num % 2 == 0: 
+        resultado = True 
+    return resultado 
+print(eh_par(2)) 
+print(eh_par(3)) 
+print(eh_par(8))
+
+
+
+#passagem de parâmetros
+- em python, sempre por referência
+- passagem só será feita por valor quando o tipo do parâmetro for um tipo simples ou imutável (int, float, bool, str) 
+
+#exemplos
+
+def incrementa1(num): 
+    num = num + 1 
+    print(“dentro de incrementa1:”,num) 
+a = 5 
+incrementa1(a) 
+print(a)
+ 
+def incrementa1(num): 
+    num = num + 1 
+    print(“dentro de incrementa1:”,num) 
+    return num 
+a = 5 
+a = incrementa1(a) 
+print(a)

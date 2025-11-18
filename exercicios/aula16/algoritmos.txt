@@ -1,0 +1,52 @@
+#l ()
+
+#registros
+- as variáveis armazenam apenas um tipo de dado 
+- algumas vezes precisamos armazenar, dentro de uma mesma variável, diferentes tipos de dados  
+- registros: agregam vários dados acerca de uma mesma entidade; tipos de dados heterogêneos; variável composta por campos; cada campo possui nome e tipo
+
+
+
+#declaração
+declare nome_da_variavel registro (nome_campo1 TIPO_DO_CAMPO1, nome_campo2 TIPO_DO_CAMPO2, …, nome_campoN TIPO_DO_CAMPON)
+
+declare conta registro (num, saldo numérico, nome literal)
+
+- uma variável registro pode ser simples (exemplo anterior), um vetor ou uma matriz
+
+declare conta[3] registro (num, saldo numérico, nome literal)
+
+
+
+#acesso aos campos
+nome_da_variavel_registro.nome_do_campo
+
+#exemplo
+
+- preenchendo registro simples
+    declare conta registro (numero, saldo numérico, titular literal) 
+    escreva “Digite o número da conta: ” 
+    leia conta.numero 
+    escreva “Digite o nome do titular da conta: ” 
+    leia conta.titular 
+    escreva “Digite o saldo da conta: ” 
+    leia conta.saldo
+
+- preenchendo vetor de registros
+    declare funcionario[4] registro (nome literal, salario numérico) 
+            i numérico 
+    para i ← 1 até 4 faça 
+    início 
+        escreva “Digite o nome do funcionário ”, i, “: ” 
+        leia funcionario[i].nome 
+        escreva “Digite o salário do funcionário ”, i, “: ” 
+        leia funcionario[i].salario 
+    fim
+
+- mostrando registros em vetor
+    para i ← 1 até 4 faça 
+    início 
+        escreva “Funcionário que ocupa a posição ”, i, “no vetor: ” 
+        escreva “Nome: ”, funcionario[i].nome 
+        escreva “Salário: ”, funcionario[i].salario 
+    fim

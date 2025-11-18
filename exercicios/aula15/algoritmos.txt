@@ -1,0 +1,108 @@
+#l ()
+
+#sub-rotinas
+- decompor algoritmos em módulos / sub-rotinas / funções / subprogramas
+- as funções permitem a realização de desvios na execução dos programas
+- desvios são efetuados quando uma função é chamada pelo programa principal
+
+#exemplo: receber o valor atual do salário de um funcionário e calcular o novo salário
+- sub-rotina: calculo
+- parâmetro: sal
+ 
+algoritmo 
+    declare sal, aum, novo_sal numérico 
+    leia sal 
+    aum ← calculo(sal) 
+    novo_sal ← sal + aum 
+    escreva “Novo salário é ”, novo_sal 
+fim_algoritmo 
+ 
+sub-rotina calculo(sal numérico) 
+    declare perc, valor numérico 
+    leia perc 
+    valor ← sal * perc / 100 
+    retorne valor 
+fim_sub_rotina calculo 
+
+#variáveis locais e globais
+- variáveis locais: só dentro da sub-rotina
+perc, valor
+- variáveis globais: estão fora da sub-rotina mas funcionam dentro de uma também
+sal, aum, novo_sal
+
+
+
+#parâmetros
+    aum ← calculo(sal) 
+aqui, sal é o conteúdo da variável sendo passado como parâmetro
+    sub-rotina calculo(sal numérico) 
+aqui, sal é o nome escolhido para o parâmetro
+
+- passagem de parâmetro por valor
+detalhe: sal não mudou seu valor
+- passagem de parâmetro por referência
+variável do cabeçalho da sub-rotina se comporta como uma variável global (as alterações são permanentes) 
+
+
+
+#exemplo
+ 
+algoritmo 
+    declare X, Y numérico 
+    X ← 1 
+    Y ← 2 
+    escreva “valores iniciais” 
+    escreva X, Y 
+    S1 
+    escreva “valores depois de S1” 
+    escreva X, Y 
+    S2(X,Y) 
+    escreva “valores depois de S2” 
+    escreva X, Y 
+    S3(X,Y) 
+    escreva “valores depois de S3” 
+    escreva X, Y 
+fim_algoritmo
+
+sub_rotina S1 
+    declare X, Y, Z numérico 
+    X ← 8 
+    Y ← 10
+    Z ← 5  
+    escreva “valores dentro de S1” 
+    escreva X, Y, Z 
+fim_sub_rotina S1 
+
+sub_rotina S2(X, Y numérico) 
+    declare Z numérico 
+    X ← X + 2 
+    Y ← Y * 2
+    Z ← X + Y  
+    escreva “valores dentro de S2” 
+    escreva X, Y, Z 
+fim_sub_rotina S2
+
+sub_rotina S3(X, Y numérico) #x e y passados como ref
+    declare A numérico 
+    A ← X + Y 
+    X ← X - 1 
+    Y ← Y - 2 
+    escreva “valores dentro de S3” 
+    escreva X, Y, A 
+fim_sub_rotina S3
+
+saída:
+valores iniciais 
+1 2 
+valores dentro de S1 
+8 10 5 
+valores depois de S1 
+1 2 
+valores dentro de S2 
+3 4 7 
+valores depois de S2 
+1 2 
+valores dentro de S3 
+0 0 3 
+valores depois de S3 
+0 0

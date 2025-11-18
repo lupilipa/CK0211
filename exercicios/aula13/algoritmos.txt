@@ -1,0 +1,88 @@
+#l ()
+
+#matriz
+- variável composta homogênea multidimensional
+- conj. de variáveis de um mesmo tipo; possui um único identificador; o que distingue as variáveis são índices
+- usa um índice para dimensão sua
+
+declare nome[dimensao1, dimensao2, ..., dimensaoN] tipo
+declare m[3,5] numérico
+3 linhas e 5 colunas
+declare m[4,6,3] numérico
+4 linhas, 6 colunas e 3 de profundidade
+
+
+
+#atribuindo valor a matriz
+declare mat[5,4] numérico
+mat[2,4] <- 45
+mat[3,1] <- 8
+mat[1,3] <- 10 
+declare m[3,4,2] literal
+mat[2,4,1] <- "A"
+mat[1,2,1] <- "B"
+mat[3,4,2] <- "C" 
+
+
+
+#preenchendo
+um "para" pra cada dimensão
+
+declare mat[3,5] numérico
+para i <- 1 até 3 faça
+início
+    para j <- 1 até 5 faça
+    início
+        escreva "digite a linha", i, "e coluna ", j
+        leia mat[i,j]
+    fim
+fim
+
+declare mat[4,3,2] numérico
+para i <- 1 até 4 faça
+início
+    para j <- 1 até 3 faça
+    início
+        para k <- 1 até 2 faça
+        início
+            escreva "digite a linha", i, "e coluna ", j "e profundidade", k
+            leia mat[i,j,k]
+        fim
+    fim
+fim
+
+
+
+#mostrando elementos
+para i <- 1 até 3 faça
+início
+    para j <- 1 até 5 faça
+    início
+        escreva mat[i,j]
+    fim
+fim
+
+
+
+#percorrendo
+- forma 1: percorrer uma linha inteira antes de ir para a linha de baixo
+para i <- 1 até 3 faça
+início
+    escreva "elementos da linha ", i
+    para j <- 1 até 4 faça
+    início
+        escreva mat[i,j]
+    fim
+fim
+
+- forma 2: percorrer uma coluna inteira antes de ir para a próxima coluna
+para j <- 1 até 4 faça
+início
+    escreva "elementos da coluna ", j
+    para i <- 1 até 3 faça
+    início
+        escreva mat[i,j]
+    fim
+fim
+
+- o elemento será sempre acessado por m[i,j,k]

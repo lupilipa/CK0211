@@ -1,0 +1,62 @@
+#l ()
+
+#matrizes em python
+- em python, são listas de listas; os índices das dimensões de uma matriz iniciam em zero
+
+#inicializando
+mat = [
+    [0, 0, 0, 0]
+    [0, 0, 0, 0]
+    [0, 0, 0, 0]
+]
+ou
+mat = []
+for i in range(3):
+    linha = [0]*4
+    mat.append(linha)
+
+mat = [
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0]],
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+]
+ou
+mat = []
+for i in range(4):
+    linha = []
+    for j = in range(3):
+        col = [0]*3
+        linha.append(col)
+    mat.append(linha)
+
+
+
+#atribuindo valores
+mat[0][2] = 5 #duas dimensões
+mat[0][3][5] = 7 #três dimensões
+
+
+
+#preenchendo
+for i in range(4):
+    for j in range(3):
+        mat[i][j] = int(input("digite: "))
+
+for i in range(4):
+    for j in range(3):
+        for k in range(2):
+        mat[i][j][k] = int(input("digite: "))
+
+
+
+#percorrendo
+- forma 1:
+for i in range(3):
+    for j in range(4):
+        print(mat[i][j])
+
+- forma 2:
+for j in range(4):
+    for i in range(3):
+        print(mat[i][j])

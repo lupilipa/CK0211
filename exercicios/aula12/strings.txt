@@ -1,0 +1,157 @@
+#l ()
+
+#strings [cadeia de caracteres] em python
+string = vetor de caracteres
+índices = 0 até len(string)-1
+imutáveis
+
+#tamanho de uma string
+nome = "luana"
+print(len(nome))
+saída: 5
+
+
+
+#operações com strings
+concatenação, composição e fatiamento
+
+#concatenação
+s = ABC
+print(s + "C")
+saída: ABCC
+print(s + "D" * 3)
+saída: ABCDDD
+
+
+
+#composição
+X = 3 Y = 7
+print("%d + %d = %d." % (X, Y, X+Y))
+saída: 3 + 7 = 10
+
+idade = 25
+print("%d" % idade)
+25
+print("%03d" % idade)
+025
+print("[%3d]" % idade)
+[ 25]
+print("[%-3d]" % idade)
+[25 ]
+print("%f" % 5)
+5.000000
+print("%.2f" % 5)
+5.00
+print("%5.2f" % 5)
+      5.00
+print("%10.2f" % 5)
+    5.00
+
+
+
+#fatiamento
+[i:f] # início e fim 
+frase = python
+print(frase[0:2])
+py 
+print(frase[:2])
+py
+print(frase[1:])
+ython
+print(frase[:])
+python
+print(frase[-1:])
+n 
+
+
+
+#verificação parcial
+- startswith e endswith [consideram maiúscula e minúscula diferentes]
+nome = "moana moreira"
+nome.startswith("moana")
+True
+nome.startswith("Moana")
+False
+nome.endswith("moreira")
+True
+
+- lower e upper
+nome.min = nome.lower()
+print(nome.min)
+moana moreira
+nome.mai = nome.upper()
+print(nome.mai)
+MOANA MOREIRA
+nome_min.startswith("moana")
+True
+nome_mai.startswith("MOANA")
+True
+
+- in ou not in
+"moana" in nome
+True
+"a mor" in nome
+True
+"Moana" in nome
+False
+"moana" not in nome
+False
+"manga" not in nome
+True
+"Moana" not in nome
+True
+"moana" in nome.lower()
+True
+"MOREIRA" in nome.upper()
+True
+"moana" not in nome.lower()
+False
+"manga" not in nome.lower()
+True
+
+
+
+#contagem
+- count
+frase = "um tigre, dois tigres, três tigres"
+frase.count("tigre")
+3
+frase.count("tigres")
+2
+frase.count("t")
+4
+frase.count("z")
+0
+
+
+
+#pesquisa
+frase = "dia chuvoso"
+- find e rfind
+frase.find("dia")
+0
+frase.find("noite")
+-1
+frase.rfind("d")
+10
+
+- início (start) e fim (end)
+frase.find("chuv")
+4
+frase.rfind("chuv")
+3
+frase.find("chuv", 2)
+4
+frase.find("chuv", 8)
+-1
+frase.find("chuv", 0, 3)
+-1
+
+- todas as ocorrências:
+frase = "um tigre, dois tigres, três tigres"
+i = 0
+while i > -1
+    i = frase.find("tigre", i)
+    if i >= 0:
+        print("posição: %d" % i)
+        i += 1

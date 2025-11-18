@@ -1,0 +1,115 @@
+#l ()
+
+#funções recursivas
+- uma função pode chamar a si mesma
+
+
+
+#fatorial
+- podemos definir o fatorial de um número não negativo n como sendo esse número multiplicado pelo fatorial de seu antecessor
+
+def fatorial(n): 
+    if n == 0 or n == 1: 
+        return 1 
+    else: 
+        return n * fatorial(n-1) 
+n = int(input("Digite o número para calcular o fatorial: ")) 
+print(fatorial(n))
+
+
+
+#fibonacci
+
+def fibonacci(n): 
+    if n <=1: 
+        return n 
+    else: 
+        return fibonacci(n-1) + fibonacci(n-2) 
+n = int(input("Digite um número maior ou igual a 0: ")) 
+print(fibonacci(n))
+
+
+
+#MDC
+
+def mdc(a, b): 
+    if b == 0: 
+        return a 
+    else: 
+        return mdc(b, a%b) 
+a = int(input("Digite o primeiro número: ")) 
+b = int(input("Digite o segundo número: ")) 
+if a < b: 
+    aux = b 
+    b = a 
+    a = aux 
+print("O M.D.C(%d, %d) = %d." % (a, b, mdc(a,b)))
+
+
+
+#arquivos
+- forma de armazenar dados permanentemente; forma simples de entrada e saída de dados para programas
+- um arquivo é uma área em um disco, gerenciada pelo sistema operacional, onde podemos ler e gravar informações
+- só precisamos saber do seu nome e como os dados serão lidos e/ou gravados (texto ou binário)
+
+
+
+#abrindo
+arquivo = open( nome_do_arquivo, modo) 
+- retorna um objeto do tipo file
+
+Modo Operações
+r leitura
+w escrita, apaga o conteúdo se já existir
+a escrita, mas preserva o conteúdo se já existir
+b modo binário
++ atualização (leitura e escrita)
+- combinados: “r+”, “w+”, “a+”, “r+b”, “w+b”
+
+
+
+#leitura
+- arquivo.write(conteudo) #para escrever o conteúdo no arquivo 
+- conteudo = arquivo.read() #lê todo o conteúdo de arquivo de uma vez como uma string 
+- linhas = arquivo.readlines() #lê todo o conteúdo de arquivo de uma vez, separando cada linha de texto em uma posição da lista linhas
+- arquivos só podem ser lidos uma vez; feche-o e abra-o novamente antes de lê-lo
+
+arquivo2 = open('exemplo2.txt') 
+arquivo2.readlines() 
+saída:
+['Essa e a primeira linha do arquivo\n','Essa e a segunda linha do arquivo\n']
+
+arquivo2 = open("exemplo2.txt",'r') 
+for linha in arquivo2: 
+    print(linha) 
+saída: 
+Essa e a primeira linha do arquivo 
+Essa e a segunda linha do arquivo 
+
+
+
+#fechamento
+arquivo.close() 
+- ao fechar um arquivo garantimos que outros processos podem acessar o mesmo arquivo sem corrompê-lo
+
+
+
+#trabalhando com arquivos
+- abrindo, escrevendo e fechando um arquivo
+- irá abrir um arquivo chamado numeros.txt no diretório atual e vai escrever um número para cada linha do arquivo, de 1 a 100; se numeros.txt não existir, será criado. se já existir, seu conteúdo será apagado  antes dos números das linhas serem escritos
+ 
+arquivo = open("numeros.txt", "w") 
+for linha in range(1,101): 
+    arquivo.write("%d\n" % linha) 
+arquivo.close() 
+print("Fim.")
+
+
+- abrindo, lendo e fechando um arquivo
+- abrir um arquivo chamado numeros.txt no diretório atual e vai ler o conteúdo de cada linha e mostrar na tela
+
+arquivo = open("numeros.txt", "r") 
+for linha in arquivo.readlines(): 
+    print(linha) 
+arquivo.close() 
+print("Fim.")

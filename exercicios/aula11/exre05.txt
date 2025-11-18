@@ -1,0 +1,36 @@
+#l ()
+
+# Faça um programa que preencha dois vetores, X e Y, com dez números inteiros cada. Calcule e mostre um vetor resultante contendo a Interseção entre X e Y (apenas os elementos que aparecem nos dois vetores, sem repetições). 
+• Estratégia: 
+• 1. Usar um laço para preencher os dois vetores X e Y 
+• 2. Depois percorrer o vetor X, verificando se cada elemento de X também está em Y. Se estiver, preencher o vetor de interseção, se o elemento já não estiver lá
+
+algoritmo
+    declare x[10], y[10], IT[10] numérico
+            cont_it, i, j, k numérico
+    para i <- 1 até 10 Faça
+    início
+        leia X[i]
+        leia Y[i]
+    fim
+    cont_it <- 1
+    para i <- 1 até 10 faça
+    início
+        j <- 1
+        enquanto j <= 10 e X[i] != Y[j] faça j <- j + 1
+        se j <= 10 então
+        início
+            k <- 1
+            enquanto k < cont_it e X[i] != IT[i] faça k <- k + 1
+            se k >= cont_it então
+            início
+                IT[cont_it] <- X[i]
+                cont_it <- cont_it + 1
+            fim
+        fim
+    fim
+    para i <- 1 até cont_it-1 faça
+    início
+        escreva IT[i]
+    fim
+fim_algoritmo

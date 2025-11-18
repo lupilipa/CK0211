@@ -1,0 +1,6 @@
+#l ()
+
+# Faça um programa que preencha um vetor com nove números inteiros, calcule e mostre os números primos e suas respectivas posições. 
+# Estratégia: 
+# 1. Usar um laço para preencher o vetor com os números digitados pelo usuário 
+# 2. Usar outro laço para percorrer o vetor e para cada elemento do vetor verificar se o número é primo e se sim, mostrar o elemento e a posição dele no vetor
